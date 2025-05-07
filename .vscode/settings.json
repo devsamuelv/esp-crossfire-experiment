@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"csrf.h": "c",
+		"cstdint": "c"
+	},
+	"C_Cpp.default.compilerPath": "/home/samuel/.platformio/packages/toolchain-xtensa-esp-elf/bin/xtensa-esp32-elf-gcc"
+}
