@@ -1,6 +1,6 @@
 #pragma once
 
-#include "crc.hpp"
+// #include "test.hpp"
 
 #define TARGET_TX 1
 #define TARGET_RX 1
@@ -358,7 +358,7 @@ typedef struct crsf_sensor_flight_mode_s
  * Uplink is the connection from the ground to the UAV and downlink the opposite direction.
  */
 
-typedef struct crsfPayloadLinkstatistics_s
+typedef struct
 {
   uint8_t uplink_RSSI_1;
   uint8_t uplink_RSSI_2;
@@ -370,11 +370,6 @@ typedef struct crsfPayloadLinkstatistics_s
   uint8_t downlink_RSSI_1;
   uint8_t downlink_Link_quality;
   int8_t downlink_SNR;
-} PACKED crsfLinkStatistics_t;
-
-typedef struct
-{
-  struct crsfLinkStatistics_t;
   uint8_t downlink_RSSI_2;
 } PACKED elrsLinkStatistics_t;
 
